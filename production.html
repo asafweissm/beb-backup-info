@@ -1,0 +1,6 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>beb production backups</title><style>body{font-family:system-ui,sans-serif;max-width:760px;margin:48px auto;padding:0 24px;color:#302b29;background:#faf8f5;line-height:1.7}h1{line-height:1.2}h2{margin-top:2rem}a{color:#80554e}</style></head><body><main><h1>beb production backups</h1>
+<p>A private backup tool for the owner's beb production environment. It is not a public backup service.</p>
+<p>An owner-controlled Google Cloud Run job creates encrypted backups of business records, settings, contracts and photos in the owner's private Google Drive. It downloads and decrypts each upload and checks it through a disposable local database restore. Morning PDF files are excluded; payment and document metadata remain.</p>
+<p>The Google connection requests account identity and access only to Drive files the backup app creates or the owner explicitly makes available to it. It does not request Gmail, Calendar or entire-Drive access. The production app, credentials and folder are separate from the test backup setup.</p>
+<p><a href="production-privacy.html">Privacy and data handling</a></p></main></body></html>
